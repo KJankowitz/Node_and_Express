@@ -1,12 +1,7 @@
-//var generateName = require("sillyname");
-// import generateName from "sillyname";
+import express from "express";
+const app = express();
+const port = 3000;
 
-// var sillyName = generateName();
-
-// console.log(`My name is ${sillyName}.`);
-
-import superheroes from "superheroes";
-
-var hero = superheroes.random();
-console.log(`I am ${hero}!`);
-
+app.listen(port, () => {
+  console.log(`Server running on port ${port}.`);
+});
