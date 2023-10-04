@@ -44,6 +44,7 @@ var bandName = "";
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//create middleware function
 function bandNameGenerator(req, res, next) {
   console.log(req.body);
   bandName = req.body["street"] + req.body["pet"];
